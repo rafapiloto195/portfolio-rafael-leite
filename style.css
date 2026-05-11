@@ -1,0 +1,274 @@
+/* RESET */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* SCROLL SUAVE */
+html{
+    scroll-behavior: smooth;
+}
+
+/* BODY */
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #0b0f1a;
+    color: white;
+    line-height: 1.6;
+}
+
+/* MENU */
+header{
+    background-color: #111827;
+
+    position: fixed;
+
+    width: 100%;
+
+    top: 0;
+
+    z-index: 1000;
+
+    box-shadow: 0 2px 10px rgba(0,0,0,0.5);
+}
+
+nav{
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    width: 90%;
+
+    margin: auto;
+
+    padding: 20px 0;
+}
+
+nav h1{
+    color: #facc15;
+    font-size: 24px;
+}
+
+nav ul{
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+
+nav a{
+    text-decoration: none;
+    color: white;
+    transition: 0.3s;
+}
+
+nav a:hover{
+    color: #facc15;
+}
+
+/* SEÇÕES */
+section{
+    min-height: 100vh;
+    padding: 140px 10%;
+}
+
+/* HERO */
+.hero{
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    text-align: center;
+
+    background:
+    linear-gradient(
+        rgba(0,0,0,0.7),
+        rgba(0,0,0,0.7)
+    ),
+    url("https://images.unsplash.com/photo-1436491865332-7a61a109cc05?q=80&w=1600");
+
+    background-size: cover;
+
+    background-position: center;
+}
+
+.hero-texto h2{
+    font-size: 64px;
+    color: #facc15;
+}
+
+.hero-texto h3{
+    font-size: 28px;
+    margin-bottom: 25px;
+}
+
+.hero-texto p{
+    max-width: 700px;
+
+    margin: auto;
+
+    margin-bottom: 30px;
+}
+
+/* BOTÃO */
+.botao{
+    display: inline-block;
+
+    padding: 15px 30px;
+
+    background-color: #facc15;
+
+    color: black;
+
+    text-decoration: none;
+
+    font-weight: bold;
+
+    border-radius: 8px;
+
+    transition: 0.3s;
+}
+
+.botao:hover{
+    transform: scale(1.05);
+
+    background-color: #fde047;
+}
+
+/* SOBRE */
+.sobre-conteudo{
+    background-color: #111827;
+}
+
+/* TÍTULOS */
+h2{
+    font-size: 40px;
+    margin-bottom: 30px;
+    color: #facc15;
+}
+
+/* PARÁGRAFOS */
+p{
+    margin-bottom: 20px;
+    max-width: 800px;
+}
+
+/* FORMAÇÃO */
+#formacao ul{
+    margin-left: 20px;
+}
+
+#formacao li{
+    margin-bottom: 15px;
+}
+
+/* PORTFÓLIO */
+.projeto{
+    background-color: #111827;
+
+    padding: 25px;
+
+    border-radius: 12px;
+
+    margin-bottom: 20px;
+
+    border-left: 5px solid #facc15;
+
+    transition: 0.3s;
+}
+
+.projeto:hover{
+    transform: translateY(-5px);
+}
+
+/* FORMULÁRIO */
+form{
+    display: flex;
+
+    flex-direction: column;
+
+    max-width: 600px;
+}
+
+input,
+textarea{
+    padding: 15px;
+
+    margin-bottom: 20px;
+
+    border: none;
+
+    border-radius: 8px;
+
+    font-size: 16px;
+}
+
+textarea{
+    height: 150px;
+
+    resize: none;
+}
+
+button{
+    padding: 15px;
+
+    border: none;
+
+    border-radius: 8px;
+
+    background-color: #facc15;
+
+    color: black;
+
+    font-weight: bold;
+
+    font-size: 16px;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+button:hover{
+    background-color: #fde047;
+}
+
+/* FOOTER */
+footer{
+    text-align: center;
+
+    padding: 30px;
+
+    background-color: #111827;
+}
+
+/* RESPONSIVIDADE */
+@media(max-width:768px){
+
+    nav{
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav ul{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-texto h2{
+        font-size: 42px;
+    }
+
+    .hero-texto h3{
+        font-size: 22px;
+    }
+
+    h2{
+        font-size: 32px;
+    }
+
+}
